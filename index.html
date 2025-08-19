@@ -335,7 +335,7 @@
             }
         }
     </style>
-</head> 
+</head>
 <body>
     <div class="container">
         <div class="header">
@@ -360,49 +360,6 @@
                     <p>Major conventions in the Eastern United States</p>
                 </div>
                 <div class="events-grid">
-
-                    <!-- MagicCon New York -->
-                    <div class="event-card">
-                        <div class="status-badge">Upcoming</div>
-                        <div class="event-header">
-                            <div class="event-name">SCG CON Orlando</div>
-                            <div class="event-organizer">Star City Games</div>
-                        </div>
-                        <div class="event-body">
-                            <div class="event-info">
-                                <div class="info-item">
-                                    <div class="info-icon">📅</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Date</div>
-                                        <div class="info-value">August 29-31, 2025</div>
-                                    </div>
-                                </div>
-                                <div class="info-item">
-                                    <div class="info-icon">📍</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Location</div>
-                                        <div class="info-value">Tru by Hilton Orlando Convention Center<br>Orlando, Florida</div>
-                                    </div>
-                                </div>
-                                <div class="info-item">
-                                    <div class="info-icon">🎯</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Magic Formats</div>
-                                        <div class="info-value">Multiple formats including Commander, Standard, Sealed, Modern, cEDH</div>
-                                    </div>
-                                </div>
-                                <div class="info-item">
-                                    <div class="info-icon">📋</div>
-                                    <div class="info-text">
-                                        <div class="info-label">TCGs</div>
-                                        <div class="info-value">Magic the Gathering, Flesh and Blood, Lorcana, Star Wars Unlimited, Vibes, Wonders of the First, Bo Jackson Battle Arena</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="https://scgcon.starcitygames.com/event/scg-con-orlando/" class="event-link" target="_blank">View Event Details</a>
-                        </div>
-                    </div>
-
                     <!-- SCG Con Baltimore -->
                     <div class="event-card">
                         <div class="status-badge">Upcoming</div>
@@ -435,6 +392,41 @@
                                 </div>
                             </div>
                             <a href="https://scgcon.starcitygames.com/event/scg-con-baltimore/" class="event-link" target="_blank">View Event Details</a>
+                        </div>
+                    </div>
+
+                    <!-- MagicCon New York -->
+                    <div class="event-card">
+                        <div class="status-badge">Upcoming</div>
+                        <div class="event-header">
+                            <div class="event-name">MagicCon New York</div>
+                            <div class="event-organizer">Wizards of the Coast</div>
+                        </div>
+                        <div class="event-body">
+                            <div class="event-info">
+                                <div class="info-item">
+                                    <div class="info-icon">📅</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Date</div>
+                                        <div class="info-value">October 25-27, 2025</div>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">📍</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Location</div>
+                                        <div class="info-value">Jacob K. Javits Convention Center<br>New York, NY</div>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">🎯</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Format</div>
+                                        <div class="info-value">Pro Tour, Artist Alley, Cosplay, Side Events</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="event-link">Registration TBA</a>
                         </div>
                     </div>
                 </div>
@@ -658,12 +650,226 @@
             <div class="last-updated">
                 <p>🔄 Last updated: August 19, 2025 | Events subject to change</p>
                 <p>💡 Tip: Bookmark this page and check back regularly for updates!</p>
-                <p>⌨️ Contribute: <a href="https://github.com/gnall/tcgcons.com">Github</a></p>
             </div>
         </div>
     </div>
 
     <script>
+        // Event data structure
+        const eventData = [
+            {
+                name: "SCG CON Orlando",
+                organizer: "Star City Games",
+                region: "US East",
+                date: "August 29-31, 2025",
+                location: "Tru by Hilton Orlando Convention Center",
+                city: "Orlando, Florida",
+                formats: "Commander, Standard, Sealed, Modern, cEDH",
+                tcgs: "Magic the Gathering, Flesh and Blood, Lorcana, Star Wars Unlimited, Vibes, Wonders of the First, Bo Jackson Battle Arena",
+                link: "https://scgcon.starcitygames.com/event/scg-con-orlando/",
+                status: "Upcoming"
+            },
+            {
+                name: "SCG CON Baltimore",
+                organizer: "Star City Games",
+                region: "US East",
+                date: "December 14-15, 2024",
+                location: "Baltimore Convention Center",
+                city: "Baltimore, MD",
+                formats: "Standard, Modern, Legacy",
+                tcgs: "Magic the Gathering",
+                link: "https://scgcon.starcitygames.com/event/scg-con-baltimore/",
+                status: "Upcoming"
+            },
+            {
+                name: "MagicCon Chicago",
+                organizer: "Wizards of the Coast",
+                region: "US Central",
+                date: "February 28 - March 2, 2025",
+                location: "Donald E. Stephens Convention Center",
+                city: "Rosemont, IL",
+                formats: "Pro Tour, Side Events, Artist Alley, Cosplay",
+                tcgs: "Magic the Gathering",
+                link: "#",
+                linkText: "Registration Opens Soon",
+                status: "Upcoming"
+            },
+            {
+                name: "SCG CON Atlanta",
+                organizer: "Star City Games",
+                region: "US Central",
+                date: "June 6-8, 2025",
+                location: "Georgia World Congress Center",
+                city: "Atlanta, GA",
+                formats: "Standard, Modern, Legacy, Commander",
+                tcgs: "Magic the Gathering",
+                link: "#",
+                linkText: "Early Bird Coming",
+                status: "Upcoming"
+            },
+            {
+                name: "CommandFest Las Vegas",
+                organizer: "ChannelFireball Events",
+                region: "US West",
+                date: "April 18-20, 2025",
+                location: "Las Vegas Convention Center",
+                city: "Las Vegas, NV",
+                formats: "Commander-focused event, Draft, Sealed",
+                tcgs: "Magic the Gathering",
+                link: "#",
+                linkText: "More Info Coming",
+                status: "Upcoming"
+            },
+            {
+                name: "MagicCon Seattle",
+                organizer: "Wizards of the Coast",
+                region: "US West",
+                date: "September 12-14, 2025",
+                location: "Washington State Convention Center",
+                city: "Seattle, WA",
+                formats: "Pro Tour, Limited Events, Commander",
+                tcgs: "Magic the Gathering",
+                link: "#",
+                linkText: "Save the Date",
+                status: "Upcoming"
+            },
+            {
+                name: "MagicCon London",
+                organizer: "Wizards of the Coast",
+                region: "Europe",
+                date: "May 23-25, 2025",
+                location: "ExCeL London",
+                city: "London, United Kingdom",
+                formats: "European Championship, Side Events",
+                tcgs: "Magic the Gathering",
+                link: "#",
+                linkText: "Registration TBA",
+                status: "Upcoming"
+            }
+        ];
+
+        // Region mapping
+        const regionMapping = {
+            'US East': 'us-east',
+            'US Central': 'us-central',
+            'US West': 'us-west',
+            'Europe': 'europe',
+            'Asia': 'asia'
+        };
+
+        // Generate event card HTML
+        function generateEventCard(event) {
+            const linkText = event.linkText || 'View Event Details';
+            const linkTarget = event.link !== '#' ? 'target="_blank"' : '';
+            
+            return `
+                <div class="event-card">
+                    <div class="status-badge">${event.status}</div>
+                    <div class="event-header">
+                        <div class="event-name">${event.name}</div>
+                        <div class="event-organizer">${event.organizer}</div>
+                    </div>
+                    <div class="event-body">
+                        <div class="event-info">
+                            <div class="info-item">
+                                <div class="info-icon">📅</div>
+                                <div class="info-text">
+                                    <div class="info-label">Date</div>
+                                    <div class="info-value">${event.date}</div>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">📍</div>
+                                <div class="info-text">
+                                    <div class="info-label">Location</div>
+                                    <div class="info-value">${event.location}<br>${event.city}</div>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">🎯</div>
+                                <div class="info-text">
+                                    <div class="info-label">Formats</div>
+                                    <div class="info-value">${event.formats}</div>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">📋</div>
+                                <div class="info-text">
+                                    <div class="info-label">TCGs</div>
+                                    <div class="info-value">${event.tcgs}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="${event.link}" class="event-link" ${linkTarget}>${linkText}</a>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Load events into regions
+        function loadEvents() {
+            // Group events by region
+            const eventsByRegion = {};
+            eventData.forEach(event => {
+                const regionKey = regionMapping[event.region];
+                if (!eventsByRegion[regionKey]) {
+                    eventsByRegion[regionKey] = [];
+                }
+                eventsByRegion[regionKey].push(event);
+            });
+
+            // Clear existing event grids and populate with new data
+            Object.keys(regionMapping).forEach(regionName => {
+                const regionKey = regionMapping[regionName];
+                const panel = document.getElementById(regionKey);
+                const eventsGrid = panel.querySelector('.events-grid');
+                
+                if (eventsByRegion[regionKey] && eventsByRegion[regionKey].length > 0) {
+                    // Remove empty region if it exists
+                    const emptyRegion = panel.querySelector('.empty-region');
+                    if (emptyRegion) {
+                        emptyRegion.remove();
+                    }
+                    
+                    // Ensure events grid exists
+                    if (!eventsGrid) {
+                        const newEventsGrid = document.createElement('div');
+                        newEventsGrid.className = 'events-grid';
+                        panel.appendChild(newEventsGrid);
+                    }
+                    
+                    // Generate HTML for all events in this region
+                    const eventsHTML = eventsByRegion[regionKey].map(generateEventCard).join('');
+                    (eventsGrid || panel.querySelector('.events-grid')).innerHTML = eventsHTML;
+                } else {
+                    // Show empty state for regions with no events
+                    if (eventsGrid) {
+                        eventsGrid.remove();
+                    }
+                    
+                    if (!panel.querySelector('.empty-region')) {
+                        const emptyDiv = document.createElement('div');
+                        emptyDiv.className = 'empty-region';
+                        emptyDiv.innerHTML = `
+                            <div class="icon">🗓️</div>
+                            <h3>No Events Scheduled</h3>
+                            <p>Check back soon for upcoming ${regionName.replace('US ', '')} conventions!</p>
+                        `;
+                        panel.appendChild(emptyDiv);
+                    }
+                }
+            });
+
+            // Re-setup event link click tracking
+            document.querySelectorAll('.event-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const eventName = this.closest('.event-card').querySelector('.event-name').textContent;
+                    const region = this.closest('.tab-panel').id;
+                    console.log(`Clicked on event: ${eventName} in region: ${region}`);
+                });
+            });
+        }
+
         // Tab switching functionality
         function initializeTabs() {
             const tabButtons = document.querySelectorAll('.tab-button');
@@ -705,6 +911,9 @@
 
         // Add some interactive animations
         document.addEventListener('DOMContentLoaded', function() {
+            // Load events first
+            loadEvents();
+            
             // Initialize tab functionality
             initializeTabs();
             
@@ -716,16 +925,6 @@
             
             // Animate the initially visible cards
             animateCards('us-east');
-
-            // Add click analytics (for your own tracking)
-            document.querySelectorAll('.event-link').forEach(link => {
-                link.addEventListener('click', function(e) {
-                    const eventName = this.closest('.event-card').querySelector('.event-name').textContent;
-                    const region = this.closest('.tab-panel').id;
-                    console.log(`Clicked on event: ${eventName} in region: ${region}`);
-                    // You can add your analytics code here
-                });
-            });
 
             // Add keyboard navigation for tabs
             document.addEventListener('keydown', function(e) {
