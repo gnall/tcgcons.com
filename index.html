@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Magic: The Gathering Conventions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(255, 255, 255, 0.1) 10px,
+                rgba(255, 255, 255, 0.1) 20px
+            );
+            animation: shimmer 20s linear infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%); }
+            100% { transform: translateX(100%) translateY(100%); }
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .region-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .tab-button {
+            background: linear-gradient(135deg, #ecf0f1 0%, #bdc3c7 100%);
+            border: none;
+            padding: 15px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: #2c3e50;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tab-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.5s;
+        }
+
+        .tab-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .tab-button:hover::before {
+            left: 100%;
+        }
+
+        .tab-button.active {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4);
+        }
+
+        .tab-panel {
+            display: none;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .region-header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            border-left: 5px solid #3498db;
+        }
+
+        .region-header h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        .region-header p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+
+        .empty-region {
+            text-align: center;
+            padding: 60px 20px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .empty-region .icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            opacity: 0.5;
+        }
+
+        .event-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            position: relative;
+            border: 2px solid transparent;
+        }
+
+        .event-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            border-color: #3498db;
+        }
+
+        .event-header {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 20px;
+            position: relative;
+        }
+
+        .event-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #f39c12, #e74c3c, #9b59b6, #3498db, #2ecc71);
+            background-size: 300% 100%;
+            animation: gradient 3s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .event-name {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .event-organizer {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .event-body {
+            padding: 25px;
+        }
+
+        .event-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: background 0.3s ease;
+        }
+
+        .info-item:hover {
+            background: #e9ecef;
+        }
+
+        .info-icon {
+            font-size: 1.2rem;
+            width: 24px;
+            text-align: center;
+        }
+
+        .info-text {
+            flex: 1;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 0.9rem;
+        }
+
+        .info-value {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        .event-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .event-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+        }
+
+        .status-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #27ae60;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .last-updated {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            color: #666;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .events-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎴 Magic: The Gathering Conventions</h1>
+            <p>Your guide to upcoming MTG events, tournaments, and conventions</p>
+        </div>
+        
+        <div class="content">
+            <!-- Region Tabs -->
+            <div class="region-tabs">
+                <button class="tab-button active" data-region="us-east">🗽 US East</button>
+                <button class="tab-button" data-region="us-central">🌽 US Central</button>
+                <button class="tab-button" data-region="us-west">🏔️ US West</button>
+                <button class="tab-button" data-region="europe">🏰 Europe</button>
+                <button class="tab-button" data-region="asia">🏮 Asia</button>
+            </div>
+
+            <!-- US East Panel -->
+            <div class="tab-panel active" id="us-east">
+                <div class="region-header">
+                    <h2>🗽 United States - East Coast</h2>
+                    <p>Major conventions in the Eastern United States</p>
+                </div>
+                <div class="events-grid">
+                    <!-- SCG Con Baltimore -->
+                    <div class="event-card">
+                        <div class="status-badge">Upcoming</div>
+                        <div class="event-header">
+                            <div class="event-name">SCG CON Baltimore</div>
+                            <div class="event-organizer">Star City Games</div>
+                        </div>
+                        <div class="event-body">
+                            <div class="event-info">
+                                <div class="info-item">
+                                    <div class="info-icon">📅</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Date</div>
+                                        <div class="info-value">December 14-15, 2024</div>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">📍</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Location</div>
+                                        <div class="info-value">Baltimore Convention Center<br>Baltimore, MD</div>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">🎯</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Format</div>
+                                        <div class="info-value">Multiple formats including Standard, Modern, Legacy</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="https://scgcon.starcitygames.com/event/scg-con-baltimore/" class="event-link" target="_blank">View Event Details</a>
+                        </div>
+                    </div>
+
+                    <!-- MagicCon New York -->
+                    <div class="event-card">
+                        <div class="status-badge">Upcoming</div>
+                        <div class="event-header">
+                            <div class="event-name">MagicCon New York</div>
+                            <div class="event-organizer">Wizards of the Coast</div>
+                        </div>
+                        <div class="event-body">
+                            <div class="event-info">
+                                <div class="info-item">
+                                    <div class="info-icon">📅</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Date</div>
+                                        <div class="info-value">October 25-27, 2025</div>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">📍</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Location</div>
+                                        <div class="info-value">Jacob K. Javits Convention Center<br>New York, NY</div>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">🎯</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Format</div>
+                                        <div class="info-value">Pro Tour, Artist Alley, Cosplay, Side Events</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="event-link">Registration TBA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- US Central Panel -->
+            <div class="tab-panel" id="us-central">
+                <div class="region-header">
+                    <h2>🌽 United States - Central</h2>
+                    <p>Conventions in the heartland of America</p>
+                </div>
+                <div class="events-grid">
+                    <!-- MagicCon Chicago -->
+                    <div class="event-card">
+                        <div class="status-badge">Upcoming</div>
+                        <div class="event-header">
+                            <div class="event-name">MagicCon Chicago</div>
+                            <div class="event-organizer">Wizards of the Coast</div>
+                        </div>
+                        <div class="event-body">
+                            <div class="event-info">
+                                <div class="info-item">
+                                    <div class="info-icon">📅</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Date</div>
+                                        <div class="info-value">February 28 - March 2, 2025</div>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">📍</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Location</div>
+                                        <div class="info-value">Donald E. Stephens Convention Center<br>Rosemont, IL</div>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">🎯</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Format</div>
+                                        <div class="info-value">Pro Tour, Side Events, Artist Alley, Cosplay</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="event-link">Registration Opens Soon</a>
+                        </div>
+                    </div>
+
+                    <!-- SCG Con Atlanta -->
+                    <div class="event-card">
+                        <div class="status-badge">Upcoming</div>
+                        <div class="event-header">
+                            <div class="event-name">SCG CON Atlanta</div>
+                            <div class="event-organizer">Star City Games</div>
+                        </div>
+                        <div class="event-body">
+                            <div class="event-info">
+                                <div class="info-item">
+                                    <div class="info-icon">📅</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Date</div>
+                                        <div class="info-value">June 6-8, 2025</div>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">📍</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Location</div>
+                                        <div class="info-value">Georgia World Congress Center<br>Atlanta, GA</div>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">🎯</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Format</div>
+                                        <div class="info-value">Standard, Modern, Legacy, Commander</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="event-link">Early Bird Coming</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- US West Panel -->
+            <div class="tab-panel" id="us-west">
+                <div class="region-header">
+                    <h2>🏔️ United States - West Coast</h2>
+                    <p>Pacific coast conventions and mountain region events</p>
+                </div>
+                <div class="events-grid">
+                    <!-- CommandFest Las Vegas -->
+                    <div class="event-card">
+                        <div class="status-badge">Upcoming</div>
+                        <div class="event-header">
+                            <div class="event-name">CommandFest Las Vegas</div>
+                            <div class="event-organizer">ChannelFireball Events</div>
+                        </div>
+                        <div class="event-body">
+                            <div class="event-info">
+                                <div class="info-item">
+                                    <div class="info-icon">📅</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Date</div>
+                                        <div class="info-value">April 18-20, 2025</div>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">📍</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Location</div>
+                                        <div class="info-value">Las Vegas Convention Center<br>Las Vegas, NV</div>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">🎯</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Format</div>
+                                        <div class="info-value">Commander-focused event, Draft, Sealed</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="event-link">More Info Coming</a>
+                        </div>
+                    </div>
+
+                    <!-- MagicCon Seattle -->
+                    <div class="event-card">
+                        <div class="status-badge">Upcoming</div>
+                        <div class="event-header">
+                            <div class="event-name">MagicCon Seattle</div>
+                            <div class="event-organizer">Wizards of the Coast</div>
+                        </div>
+                        <div class="event-body">
+                            <div class="event-info">
+                                <div class="info-item">
+                                    <div class="info-icon">📅</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Date</div>
+                                        <div class="info-value">September 12-14, 2025</div>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">📍</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Location</div>
+                                        <div class="info-value">Washington State Convention Center<br>Seattle, WA</div>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">🎯</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Format</div>
+                                        <div class="info-value">Pro Tour, Limited Events, Commander</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="event-link">Save the Date</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Europe Panel -->
+            <div class="tab-panel" id="europe">
+                <div class="region-header">
+                    <h2>🏰 Europe</h2>
+                    <p>European MTG conventions and tournaments</p>
+                </div>
+                <div class="events-grid">
+                    <!-- MagicCon London -->
+                    <div class="event-card">
+                        <div class="status-badge">Upcoming</div>
+                        <div class="event-header">
+                            <div class="event-name">MagicCon London</div>
+                            <div class="event-organizer">Wizards of the Coast</div>
+                        </div>
+                        <div class="event-body">
+                            <div class="event-info">
+                                <div class="info-item">
+                                    <div class="info-icon">📅</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Date</div>
+                                        <div class="info-value">May 23-25, 2025</div>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">📍</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Location</div>
+                                        <div class="info-value">ExCeL London<br>London, United Kingdom</div>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">🎯</div>
+                                    <div class="info-text">
+                                        <div class="info-label">Format</div>
+                                        <div class="info-value">European Championship, Side Events</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="event-link">Registration TBA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Asia Panel -->
+            <div class="tab-panel" id="asia">
+                <div class="region-header">
+                    <h2>🏮 Asia</h2>
+                    <p>Asian MTG conventions and Pro Tour events</p>
+                </div>
+                <div class="empty-region">
+                    <div class="icon">🗓️</div>
+                    <h3>No Events Scheduled</h3>
+                    <p>Check back soon for upcoming Asian MTG conventions!</p>
+                </div>
+            </div>
+
+            <div class="last-updated">
+                <p>🔄 Last updated: August 19, 2025 | Events subject to change</p>
+                <p>💡 Tip: Bookmark this page and check back regularly for updates!</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tab switching functionality
+        function initializeTabs() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabPanels = document.querySelectorAll('.tab-panel');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetRegion = button.getAttribute('data-region');
+                    
+                    // Remove active class from all buttons and panels
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabPanels.forEach(panel => panel.classList.remove('active'));
+                    
+                    // Add active class to clicked button and corresponding panel
+                    button.classList.add('active');
+                    document.getElementById(targetRegion).classList.add('active');
+                    
+                    // Re-trigger card animations for the newly visible panel
+                    animateCards(targetRegion);
+                });
+            });
+        }
+
+        // Animate cards for a specific panel
+        function animateCards(panelId) {
+            const panel = document.getElementById(panelId);
+            const cards = panel.querySelectorAll('.event-card');
+            
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(50px)';
+                
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        }
+
+        // Add some interactive animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize tab functionality
+            initializeTabs();
+            
+            // Set up card animations
+            const allCards = document.querySelectorAll('.event-card');
+            allCards.forEach(card => {
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            });
+            
+            // Animate the initially visible cards
+            animateCards('us-east');
+
+            // Add click analytics (for your own tracking)
+            document.querySelectorAll('.event-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const eventName = this.closest('.event-card').querySelector('.event-name').textContent;
+                    const region = this.closest('.tab-panel').id;
+                    console.log(`Clicked on event: ${eventName} in region: ${region}`);
+                    // You can add your analytics code here
+                });
+            });
+
+            // Add keyboard navigation for tabs
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+                    const activeButton = document.querySelector('.tab-button.active');
+                    const buttons = Array.from(document.querySelectorAll('.tab-button'));
+                    const currentIndex = buttons.indexOf(activeButton);
+                    
+                    let newIndex;
+                    if (e.key === 'ArrowLeft') {
+                        newIndex = currentIndex > 0 ? currentIndex - 1 : buttons.length - 1;
+                    } else {
+                        newIndex = currentIndex < buttons.length - 1 ? currentIndex + 1 : 0;
+                    }
+                    
+                    buttons[newIndex].click();
+                    buttons[newIndex].focus();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
