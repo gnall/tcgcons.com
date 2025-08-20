@@ -60,6 +60,18 @@
       "tcgs": "Magic the Gathering, Flesh and Blood, Lorcana, Star Wars Unlimited, Wonders of the First, Sorcery, Vibes, Bo Jackson Battle Arena",
       "link": "https://scgcon.starcitygames.com/event/scg-con-las-vegas/",
       "status": "Upcoming"
+    },
+    {
+      "name": "PAX UNPLUGGED",
+      "organizer": "PAX",
+      "region": "US East",
+      "date": "November 21-23, 2025",
+      "location": "Pennsylvania Convention Center",
+      "city": "Philadelphia, PA",
+      "formats": "TBD",
+      "tcgs": "Everything TCGS!",
+      "link": "https://unplugged.paxsite.com/en-us.html",
+      "status": "Upcoming"
     }
   ]
 }
