@@ -183,6 +183,37 @@
             opacity: 0.5;
         }
 
+        .loading-indicator {
+            text-align: center;
+            padding: 40px 20px;
+            color: #3498db;
+        }
+
+        .loading-indicator .icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            animation: pulse 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes pulse {
+            from { opacity: 0.6; }
+            to { opacity: 1; }
+        }
+
+        .error-message {
+            text-align: center;
+            padding: 40px 20px;
+            color: #e74c3c;
+            background: #fdf2f2;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .error-message .icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
         .event-card {
             background: white;
             border-radius: 15px;
@@ -359,76 +390,10 @@
                     <h2>🗽 United States - East Coast</h2>
                     <p>Major conventions in the Eastern United States</p>
                 </div>
-                <div class="events-grid">
-                    <!-- SCG Con Baltimore -->
-                    <div class="event-card">
-                        <div class="status-badge">Upcoming</div>
-                        <div class="event-header">
-                            <div class="event-name">SCG CON Baltimore</div>
-                            <div class="event-organizer">Star City Games</div>
-                        </div>
-                        <div class="event-body">
-                            <div class="event-info">
-                                <div class="info-item">
-                                    <div class="info-icon">📅</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Date</div>
-                                        <div class="info-value">December 14-15, 2024</div>
-                                    </div>
-                                </div>
-                                <div class="info-item">
-                                    <div class="info-icon">📍</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Location</div>
-                                        <div class="info-value">Baltimore Convention Center<br>Baltimore, MD</div>
-                                    </div>
-                                </div>
-                                <div class="info-item">
-                                    <div class="info-icon">🎯</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Format</div>
-                                        <div class="info-value">Multiple formats including Standard, Modern, Legacy</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="https://scgcon.starcitygames.com/event/scg-con-baltimore/" class="event-link" target="_blank">View Event Details</a>
-                        </div>
-                    </div>
-
-                    <!-- MagicCon New York -->
-                    <div class="event-card">
-                        <div class="status-badge">Upcoming</div>
-                        <div class="event-header">
-                            <div class="event-name">MagicCon New York</div>
-                            <div class="event-organizer">Wizards of the Coast</div>
-                        </div>
-                        <div class="event-body">
-                            <div class="event-info">
-                                <div class="info-item">
-                                    <div class="info-icon">📅</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Date</div>
-                                        <div class="info-value">October 25-27, 2025</div>
-                                    </div>
-                                </div>
-                                <div class="info-item">
-                                    <div class="info-icon">📍</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Location</div>
-                                        <div class="info-value">Jacob K. Javits Convention Center<br>New York, NY</div>
-                                    </div>
-                                </div>
-                                <div class="info-item">
-                                    <div class="info-icon">🎯</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Format</div>
-                                        <div class="info-value">Pro Tour, Artist Alley, Cosplay, Side Events</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" class="event-link">Registration TBA</a>
-                        </div>
-                    </div>
+                <div class="loading-indicator">
+                    <div class="icon">⏳</div>
+                    <h3>Loading Events...</h3>
+                    <p>Fetching the latest convention information</p>
                 </div>
             </div>
 
@@ -438,76 +403,10 @@
                     <h2>🌽 United States - Central</h2>
                     <p>Conventions in the heartland of America</p>
                 </div>
-                <div class="events-grid">
-                    <!-- MagicCon Chicago -->
-                    <div class="event-card">
-                        <div class="status-badge">Upcoming</div>
-                        <div class="event-header">
-                            <div class="event-name">MagicCon Chicago</div>
-                            <div class="event-organizer">Wizards of the Coast</div>
-                        </div>
-                        <div class="event-body">
-                            <div class="event-info">
-                                <div class="info-item">
-                                    <div class="info-icon">📅</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Date</div>
-                                        <div class="info-value">February 28 - March 2, 2025</div>
-                                    </div>
-                                </div>
-                                <div class="info-item">
-                                    <div class="info-icon">📍</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Location</div>
-                                        <div class="info-value">Donald E. Stephens Convention Center<br>Rosemont, IL</div>
-                                    </div>
-                                </div>
-                                <div class="info-item">
-                                    <div class="info-icon">🎯</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Format</div>
-                                        <div class="info-value">Pro Tour, Side Events, Artist Alley, Cosplay</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" class="event-link">Registration Opens Soon</a>
-                        </div>
-                    </div>
-
-                    <!-- SCG Con Atlanta -->
-                    <div class="event-card">
-                        <div class="status-badge">Upcoming</div>
-                        <div class="event-header">
-                            <div class="event-name">SCG CON Atlanta</div>
-                            <div class="event-organizer">Star City Games</div>
-                        </div>
-                        <div class="event-body">
-                            <div class="event-info">
-                                <div class="info-item">
-                                    <div class="info-icon">📅</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Date</div>
-                                        <div class="info-value">June 6-8, 2025</div>
-                                    </div>
-                                </div>
-                                <div class="info-item">
-                                    <div class="info-icon">📍</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Location</div>
-                                        <div class="info-value">Georgia World Congress Center<br>Atlanta, GA</div>
-                                    </div>
-                                </div>
-                                <div class="info-item">
-                                    <div class="info-icon">🎯</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Format</div>
-                                        <div class="info-value">Standard, Modern, Legacy, Commander</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" class="event-link">Early Bird Coming</a>
-                        </div>
-                    </div>
+                <div class="loading-indicator">
+                    <div class="icon">⏳</div>
+                    <h3>Loading Events...</h3>
+                    <p>Fetching the latest convention information</p>
                 </div>
             </div>
 
@@ -517,76 +416,10 @@
                     <h2>🏔️ United States - West Coast</h2>
                     <p>Pacific coast conventions and mountain region events</p>
                 </div>
-                <div class="events-grid">
-                    <!-- CommandFest Las Vegas -->
-                    <div class="event-card">
-                        <div class="status-badge">Upcoming</div>
-                        <div class="event-header">
-                            <div class="event-name">CommandFest Las Vegas</div>
-                            <div class="event-organizer">ChannelFireball Events</div>
-                        </div>
-                        <div class="event-body">
-                            <div class="event-info">
-                                <div class="info-item">
-                                    <div class="info-icon">📅</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Date</div>
-                                        <div class="info-value">April 18-20, 2025</div>
-                                    </div>
-                                </div>
-                                <div class="info-item">
-                                    <div class="info-icon">📍</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Location</div>
-                                        <div class="info-value">Las Vegas Convention Center<br>Las Vegas, NV</div>
-                                    </div>
-                                </div>
-                                <div class="info-item">
-                                    <div class="info-icon">🎯</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Format</div>
-                                        <div class="info-value">Commander-focused event, Draft, Sealed</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" class="event-link">More Info Coming</a>
-                        </div>
-                    </div>
-
-                    <!-- MagicCon Seattle -->
-                    <div class="event-card">
-                        <div class="status-badge">Upcoming</div>
-                        <div class="event-header">
-                            <div class="event-name">MagicCon Seattle</div>
-                            <div class="event-organizer">Wizards of the Coast</div>
-                        </div>
-                        <div class="event-body">
-                            <div class="event-info">
-                                <div class="info-item">
-                                    <div class="info-icon">📅</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Date</div>
-                                        <div class="info-value">September 12-14, 2025</div>
-                                    </div>
-                                </div>
-                                <div class="info-item">
-                                    <div class="info-icon">📍</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Location</div>
-                                        <div class="info-value">Washington State Convention Center<br>Seattle, WA</div>
-                                    </div>
-                                </div>
-                                <div class="info-item">
-                                    <div class="info-icon">🎯</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Format</div>
-                                        <div class="info-value">Pro Tour, Limited Events, Commander</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" class="event-link">Save the Date</a>
-                        </div>
-                    </div>
+                <div class="loading-indicator">
+                    <div class="icon">⏳</div>
+                    <h3>Loading Events...</h3>
+                    <p>Fetching the latest convention information</p>
                 </div>
             </div>
 
@@ -596,41 +429,10 @@
                     <h2>🏰 Europe</h2>
                     <p>European MTG conventions and tournaments</p>
                 </div>
-                <div class="events-grid">
-                    <!-- MagicCon London -->
-                    <div class="event-card">
-                        <div class="status-badge">Upcoming</div>
-                        <div class="event-header">
-                            <div class="event-name">MagicCon London</div>
-                            <div class="event-organizer">Wizards of the Coast</div>
-                        </div>
-                        <div class="event-body">
-                            <div class="event-info">
-                                <div class="info-item">
-                                    <div class="info-icon">📅</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Date</div>
-                                        <div class="info-value">May 23-25, 2025</div>
-                                    </div>
-                                </div>
-                                <div class="info-item">
-                                    <div class="info-icon">📍</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Location</div>
-                                        <div class="info-value">ExCeL London<br>London, United Kingdom</div>
-                                    </div>
-                                </div>
-                                <div class="info-item">
-                                    <div class="info-icon">🎯</div>
-                                    <div class="info-text">
-                                        <div class="info-label">Format</div>
-                                        <div class="info-value">European Championship, Side Events</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" class="event-link">Registration TBA</a>
-                        </div>
-                    </div>
+                <div class="loading-indicator">
+                    <div class="icon">⏳</div>
+                    <h3>Loading Events...</h3>
+                    <p>Fetching the latest convention information</p>
                 </div>
             </div>
 
@@ -640,15 +442,15 @@
                     <h2>🏮 Asia</h2>
                     <p>Asian MTG conventions and Pro Tour events</p>
                 </div>
-                <div class="empty-region">
-                    <div class="icon">🗓️</div>
-                    <h3>No Events Scheduled</h3>
-                    <p>Check back soon for upcoming Asian MTG conventions!</p>
+                <div class="loading-indicator">
+                    <div class="icon">⏳</div>
+                    <h3>Loading Events...</h3>
+                    <p>Fetching the latest convention information</p>
                 </div>
             </div>
 
             <div class="last-updated">
-                <p>🔄 Last updated: August 19, 2025 | Events subject to change</p>
+                <p>🔄 Last updated: <span id="last-update-time">Loading...</span> | Events subject to change</p>
                 <p>💡 Tip: Bookmark this page and check back regularly for updates!</p>
                 <p>🔧 Contribute: <a href="https://github.com/gnall/tcgcons.com" target="_blank">Github</a></p>
             </div>
@@ -656,69 +458,8 @@
     </div>
 
     <script>
-        // Event data structure
-        const eventData = [
-            {
-                name: "SCG CON Orlando",
-                organizer: "Star City Games",
-                region: "US East",
-                date: "August 29-31, 2025",
-                location: "Tru by Hilton Orlando Convention Center",
-                city: "Orlando, Florida",
-                formats: "Commander, Standard, Sealed, Modern, cEDH",
-                tcgs: "Magic the Gathering, Flesh and Blood, Lorcana, Star Wars Unlimited, Vibes, Wonders of the First, Bo Jackson Battle Arena",
-                link: "https://scgcon.starcitygames.com/event/scg-con-orlando/",
-                status: "Upcoming"
-            },
-            {
-                name: "MagicCon Atlanta 2025",
-                organizer: "Wizards of the Coast",
-                region: "US East",
-                date: "September 26-28, 2025",
-                location: "Georgia World Congress Center",
-                city: "Atlanta, GA",
-                formats: "Pro Tour, Side Events, Artist Alley, Cosplay",
-                tcgs: "Magic the Gathering",
-                link: "https://mcatlanta.mtgfestivals.com/en-us.html",
-                status: "Upcoming"
-            },
-            {
-                name: "SCG CON Houston",
-                organizer: "Star City Games",
-                region: "US Central",
-                date: "October 17-19, 2025",
-                location: "NRG Center",
-                city: "Houston, TX",
-                formats: "Commander, Standard, Sealed, Modern, cEDH, & More",
-                tcgs: "Magic the Gathering, Flesh and Blood, Lorcana, Star Wars Unlimited, Wonders of the First, Sorcery, Vibes, Bo Jackson Battle Arena",
-                link: "https://scgcon.starcitygames.com/event/scg-con-houston/",
-                status: "Upcoming"
-            },
-            {
-                name: "SCG CON Baltimore",
-                organizer: "Star City Games",
-                region: "US East",
-                date: "October 24-26, 2025",
-                location: "Baltimore Convention Center",
-                city: "Baltimore, MD",
-                formats: "Standard, TBD",
-                tcgs: "Magic the Gathering, Flesh and Blood, Lorcana, Star Wars Unlimited, Wonders of the First, Sorcery, Vibes, Bo Jackson Battle Arena",
-                link: "https://scgcon.starcitygames.com/event/scg-con-baltimore/",
-                status: "Upcoming"
-            },
-            {
-                name: "SCG CON Las Vegas",
-                organizer: "Star City Games",
-                region: "US West",
-                date: "November 21-23, 2025",
-                location: "Westgate Las Vegas Resort & Casino",
-                city: "Las Vegas, NV",
-                formats: "Standard, TBD",
-                tcgs: "Magic the Gathering, Flesh and Blood, Lorcana, Star Wars Unlimited, Wonders of the First, Sorcery, Vibes, Bo Jackson Battle Arena",
-                link: "https://scgcon.starcitygames.com/event/scg-con-baltimore/",
-                status: "Upcoming"
-            }
-        ];
+        // Global variable to store event data
+        let eventData = [];
 
         // Region mapping
         const regionMapping = {
@@ -728,6 +469,60 @@
             'Europe': 'europe',
             'Asia': 'asia'
         };
+
+        // Fetch event data from GitHub repository
+        async function fetchEventData() {
+            try {
+                // Use the raw GitHub URL to fetch the JSON content
+                const response = await fetch('https://raw.githubusercontent.com/gnall/tcgcons.com/main/eventdata.json');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                eventData = data.events || data; // Support both {events: [...]} and [...] formats
+                
+                // Update last updated time if available
+                if (data.lastUpdated) {
+                    document.getElementById('last-update-time').textContent = data.lastUpdated;
+                } else {
+                    document.getElementById('last-update-time').textContent = new Date().toLocaleDateString();
+                }
+                
+                console.log('Successfully loaded event data from GitHub repository');
+                return true;
+            } catch (error) {
+                console.error('Error fetching event data from GitHub:', error);
+                showError('Failed to load event data from GitHub. Please try again later.');
+                return false;
+            }
+        }
+
+        // Show error message in all regions
+        function showError(message) {
+            const panels = document.querySelectorAll('.tab-panel');
+            panels.forEach(panel => {
+                // Remove loading indicators
+                const loadingIndicator = panel.querySelector('.loading-indicator');
+                if (loadingIndicator) {
+                    loadingIndicator.remove();
+                }
+                
+                // Add error message
+                if (!panel.querySelector('.error-message')) {
+                    const errorDiv = document.createElement('div');
+                    errorDiv.className = 'error-message';
+                    errorDiv.innerHTML = `
+                        <div class="icon">⚠️</div>
+                        <h3>Error Loading Events</h3>
+                        <p>${message}</p>
+                        <button onclick="location.reload()" style="margin-top: 15px; padding: 10px 20px; background: #e74c3c; color: white; border: none; border-radius: 5px; cursor: pointer;">Retry</button>
+                    `;
+                    panel.appendChild(errorDiv);
+                }
+            });
+        }
 
         // Generate event card HTML
         function generateEventCard(event) {
@@ -764,6 +559,7 @@
                                     <div class="info-value">${event.formats}</div>
                                 </div>
                             </div>
+                            ${event.tcgs ? `
                             <div class="info-item">
                                 <div class="info-icon">📋</div>
                                 <div class="info-text">
@@ -771,6 +567,7 @@
                                     <div class="info-value">${event.tcgs}</div>
                                 </div>
                             </div>
+                            ` : ''}
                         </div>
                         <a href="${event.link}" class="event-link" ${linkTarget}>${linkText}</a>
                     </div>
@@ -790,45 +587,42 @@
                 eventsByRegion[regionKey].push(event);
             });
 
-            // Clear existing event grids and populate with new data
+            // Clear existing content and populate with new data
             Object.keys(regionMapping).forEach(regionName => {
                 const regionKey = regionMapping[regionName];
                 const panel = document.getElementById(regionKey);
-                const eventsGrid = panel.querySelector('.events-grid');
+                
+                // Remove loading indicator
+                const loadingIndicator = panel.querySelector('.loading-indicator');
+                if (loadingIndicator) {
+                    loadingIndicator.remove();
+                }
+                
+                // Remove existing events grid or empty region
+                const existingGrid = panel.querySelector('.events-grid');
+                const existingEmpty = panel.querySelector('.empty-region');
+                if (existingGrid) existingGrid.remove();
+                if (existingEmpty) existingEmpty.remove();
                 
                 if (eventsByRegion[regionKey] && eventsByRegion[regionKey].length > 0) {
-                    // Remove empty region if it exists
-                    const emptyRegion = panel.querySelector('.empty-region');
-                    if (emptyRegion) {
-                        emptyRegion.remove();
-                    }
-                    
-                    // Ensure events grid exists
-                    if (!eventsGrid) {
-                        const newEventsGrid = document.createElement('div');
-                        newEventsGrid.className = 'events-grid';
-                        panel.appendChild(newEventsGrid);
-                    }
+                    // Create and populate events grid
+                    const eventsGrid = document.createElement('div');
+                    eventsGrid.className = 'events-grid';
                     
                     // Generate HTML for all events in this region
                     const eventsHTML = eventsByRegion[regionKey].map(generateEventCard).join('');
-                    (eventsGrid || panel.querySelector('.events-grid')).innerHTML = eventsHTML;
+                    eventsGrid.innerHTML = eventsHTML;
+                    panel.appendChild(eventsGrid);
                 } else {
                     // Show empty state for regions with no events
-                    if (eventsGrid) {
-                        eventsGrid.remove();
-                    }
-                    
-                    if (!panel.querySelector('.empty-region')) {
-                        const emptyDiv = document.createElement('div');
-                        emptyDiv.className = 'empty-region';
-                        emptyDiv.innerHTML = `
-                            <div class="icon">🗓️</div>
-                            <h3>No Events Scheduled</h3>
-                            <p>Check back soon for upcoming ${regionName.replace('US ', '')} conventions!</p>
-                        `;
-                        panel.appendChild(emptyDiv);
-                    }
+                    const emptyDiv = document.createElement('div');
+                    emptyDiv.className = 'empty-region';
+                    emptyDiv.innerHTML = `
+                        <div class="icon">🗓️</div>
+                        <h3>No Events Scheduled</h3>
+                        <p>Check back soon for upcoming ${regionName.replace('US ', '')} conventions!</p>
+                    `;
+                    panel.appendChild(emptyDiv);
                 }
             });
 
@@ -881,12 +675,9 @@
             });
         }
 
-        // Add some interactive animations
-        document.addEventListener('DOMContentLoaded', function() {
-            // Load events first
-            loadEvents();
-            
-            // Initialize tab functionality
+        // Initialize the application
+        async function initializeApp() {
+            // Initialize tab functionality first
             initializeTabs();
             
             // Set up card animations
@@ -895,8 +686,13 @@
                 card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             });
             
-            // Animate the initially visible cards
-            animateCards('us-east');
+            // Fetch data and load events
+            const success = await fetchEventData();
+            if (success) {
+                loadEvents();
+                // Animate the initially visible cards
+                setTimeout(() => animateCards('us-east'), 100);
+            }
 
             // Add keyboard navigation for tabs
             document.addEventListener('keydown', function(e) {
@@ -916,7 +712,10 @@
                     buttons[newIndex].focus();
                 }
             });
-        });
+        }
+
+        // Start the application when DOM is loaded
+        document.addEventListener('DOMContentLoaded', initializeApp);
     </script>
 </body>
 </html>
