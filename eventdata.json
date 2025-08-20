@@ -1,0 +1,65 @@
+{
+  "lastUpdated": "August 19, 2025",
+  "events": [
+    {
+      "name": "SCG CON Orlando",
+      "organizer": "Star City Games",
+      "region": "US East",
+      "date": "August 29-31, 2025",
+      "location": "Tru by Hilton Orlando Convention Center",
+      "city": "Orlando, Florida",
+      "formats": "Commander, Standard, Sealed, Modern, cEDH",
+      "tcgs": "Magic the Gathering, Flesh and Blood, Lorcana, Star Wars Unlimited, Vibes, Wonders of the First, Bo Jackson Battle Arena",
+      "link": "https://scgcon.starcitygames.com/event/scg-con-orlando/",
+      "status": "Upcoming"
+    },
+    {
+      "name": "MagicCon Atlanta 2025",
+      "organizer": "Wizards of the Coast",
+      "region": "US East",
+      "date": "September 26-28, 2025",
+      "location": "Georgia World Congress Center",
+      "city": "Atlanta, GA",
+      "formats": "Pro Tour, Side Events, Artist Alley, Cosplay",
+      "tcgs": "Magic the Gathering",
+      "link": "https://mcatlanta.mtgfestivals.com/en-us.html",
+      "status": "Upcoming"
+    },
+    {
+      "name": "SCG CON Houston",
+      "organizer": "Star City Games",
+      "region": "US Central",
+      "date": "October 17-19, 2025",
+      "location": "NRG Center",
+      "city": "Houston, TX",
+      "formats": "Commander, Standard, Sealed, Modern, cEDH, & More",
+      "tcgs": "Magic the Gathering, Flesh and Blood, Lorcana, Star Wars Unlimited, Wonders of the First, Sorcery, Vibes, Bo Jackson Battle Arena",
+      "link": "https://scgcon.starcitygames.com/event/scg-con-houston/",
+      "status": "Upcoming"
+    },
+    {
+      "name": "SCG CON Baltimore",
+      "organizer": "Star City Games",
+      "region": "US East",
+      "date": "October 24-26, 2025",
+      "location": "Baltimore Convention Center",
+      "city": "Baltimore, MD",
+      "formats": "Standard, TBD",
+      "tcgs": "Magic the Gathering, Flesh and Blood, Lorcana, Star Wars Unlimited, Wonders of the First, Sorcery, Vibes, Bo Jackson Battle Arena",
+      "link": "https://scgcon.starcitygames.com/event/scg-con-baltimore/",
+      "status": "Upcoming"
+    },
+    {
+      "name": "SCG CON Las Vegas",
+      "organizer": "Star City Games",
+      "region": "US West",
+      "date": "November 21-23, 2025",
+      "location": "Westgate Las Vegas Resort & Casino",
+      "city": "Las Vegas, NV",
+      "formats": "Standard, TBD",
+      "tcgs": "Magic the Gathering, Flesh and Blood, Lorcana, Star Wars Unlimited, Wonders of the First, Sorcery, Vibes, Bo Jackson Battle Arena",
+      "link": "https://scgcon.starcitygames.com/event/scg-con-las-vegas/",
+      "status": "Upcoming"
+    }
+  ]
+}
