@@ -329,18 +329,6 @@
             box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
         }
 
-        .status-badge {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background: #27ae60;
-            color: white;
-            padding: 5px 12px;
-            border-radius: 15px;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
-
         .last-updated {
             text-align: center;
             margin-top: 40px;
@@ -470,6 +458,47 @@
             'Asia': 'asia'
         };
 
+        // Parse date string and return Date object
+        function parseEventDate(dateString) {
+            // Handle date ranges like "August 29-31, 2025" or single dates like "September 13, 2025"
+            const parts = dateString.split(', ');
+            if (parts.length !== 2) return null;
+            
+            const year = parseInt(parts[1]);
+            const monthAndDay = parts[0];
+            
+            // Extract month
+            const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                              'July', 'August', 'September', 'October', 'November', 'December'];
+            const month = monthNames.findIndex(m => monthAndDay.includes(m));
+            if (month === -1) return null;
+            
+            // Extract day (use the last day for ranges, single day for single dates)
+            const dayMatch = monthAndDay.match(/(\d+)(?:-(\d+))?$/);
+            if (!dayMatch) return null;
+            
+            const endDay = dayMatch[2] ? parseInt(dayMatch[2]) : parseInt(dayMatch[1]);
+            
+            return new Date(year, month, endDay);
+        }
+
+        // Filter events based on date criteria
+        function filterRecentEvents(events) {
+            const now = new Date();
+            const sevenDaysAgo = new Date(now.getTime() - (7 * 24 * 60 * 60 * 1000));
+            
+            return events.filter(event => {
+                const eventEndDate = parseEventDate(event.date);
+                if (!eventEndDate) {
+                    console.warn('Could not parse date for event:', event.name, event.date);
+                    return true; // Include events with unparseable dates to be safe
+                }
+                
+                // Include events that end today or in the future, or ended within the last 7 days
+                return eventEndDate >= sevenDaysAgo;
+            });
+        }
+
         // Fetch event data from GitHub repository
         async function fetchEventData() {
             try {
@@ -481,7 +510,12 @@
                 }
                 
                 const data = await response.json();
-                eventData = data.events || data; // Support both {events: [...]} and [...] formats
+                const allEvents = data.events || data; // Support both {events: [...]} and [...] formats
+                
+                // Filter events to only include upcoming or recently ended events
+                eventData = filterRecentEvents(allEvents);
+                
+                console.log(`Loaded ${allEvents.length} total events, showing ${eventData.length} after filtering`);
                 
                 // Update last updated time if available
                 if (data.lastUpdated) {
@@ -531,7 +565,6 @@
             
             return `
                 <div class="event-card">
-                    <div class="status-badge">${event.status}</div>
                     <div class="event-header">
                         <div class="event-name">${event.name}</div>
                         <div class="event-organizer">${event.organizer}</div>
