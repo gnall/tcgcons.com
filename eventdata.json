@@ -10,8 +10,7 @@
       "city": "Orlando, Florida",
       "formats": "Commander, Standard, Sealed, Modern, cEDH",
       "tcgs": "Magic the Gathering, Flesh and Blood, Lorcana, Star Wars Unlimited, Vibes, Wonders of the First, Bo Jackson Battle Arena",
-      "link": "https://scgcon.starcitygames.com/event/scg-con-orlando/",
-      "status": "Upcoming"
+      "link": "https://scgcon.starcitygames.com/event/scg-con-orlando/"
     },
     {
       "name": "Collect-A-Con Atlanta",
@@ -22,8 +21,7 @@
       "city": "Atlanta, GA",
       "formats": "Buy/Sell/Trade",
       "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
-      "link": "https://collectaconusa.com/atlanta-2/",
-      "status": "Upcoming"
+      "link": "https://collectaconusa.com/atlanta-2/"
     },
     {
       "name": "MagicCon Atlanta 2025",
@@ -34,8 +32,7 @@
       "city": "Atlanta, GA",
       "formats": "Pro Tour, Side Events, Artist Alley, Cosplay",
       "tcgs": "Magic the Gathering",
-      "link": "https://mcatlanta.mtgfestivals.com/en-us.html",
-      "status": "Upcoming"
+      "link": "https://mcatlanta.mtgfestivals.com/en-us.html"
     },
     {
       "name": "Collect-A-Con Chicago",
@@ -46,8 +43,7 @@
       "city": "Rosemont, IL",
       "formats": "Buy/Sell/Trade",
       "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
-      "link": "https://collectaconusa.com/chicago-2/",
-      "status": "Upcoming"
+      "link": "https://collectaconusa.com/chicago-2/"
     },
     {
       "name": "SCG CON Houston",
@@ -58,8 +54,7 @@
       "city": "Houston, TX",
       "formats": "Commander, Standard, Sealed, Modern, cEDH, & More",
       "tcgs": "Magic the Gathering, Flesh and Blood, Lorcana, Star Wars Unlimited, Wonders of the First, Sorcery, Vibes, Bo Jackson Battle Arena",
-      "link": "https://scgcon.starcitygames.com/event/scg-con-houston/",
-      "status": "Upcoming"
+      "link": "https://scgcon.starcitygames.com/event/scg-con-houston/"
     },
     {
       "name": "SCG CON Baltimore",
@@ -70,8 +65,7 @@
       "city": "Baltimore, MD",
       "formats": "Standard, TBD",
       "tcgs": "Magic the Gathering, Flesh and Blood, Lorcana, Star Wars Unlimited, Wonders of the First, Sorcery, Vibes, Bo Jackson Battle Arena",
-      "link": "https://scgcon.starcitygames.com/event/scg-con-baltimore/",
-      "status": "Upcoming"
+      "link": "https://scgcon.starcitygames.com/event/scg-con-baltimore/"
     },
     {
       "name": "Collect-A-Con Houston",
@@ -82,8 +76,7 @@
       "city": "Houston, TX",
       "formats": "Buy/Sell/Trade",
       "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
-      "link": "https://collectaconusa.com/houston2/",
-      "status": "Upcoming"
+      "link": "https://collectaconusa.com/houston2/"
     },
     {
       "name": "Collect-A-Con Dallas/Fort-Worth",
@@ -94,8 +87,7 @@
       "city": "Fort Worth, TX",
       "formats": "Buy/Sell/Trade",
       "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
-      "link": "https://collectaconusa.com/dfw2/",
-      "status": "Upcoming"
+      "link": "https://collectaconusa.com/dfw2/"
     },
     {
       "name": "SCG CON Las Vegas",
@@ -106,8 +98,7 @@
       "city": "Las Vegas, NV",
       "formats": "Standard, TBD",
       "tcgs": "Magic the Gathering, Flesh and Blood, Lorcana, Star Wars Unlimited, Wonders of the First, Sorcery, Vibes, Bo Jackson Battle Arena",
-      "link": "https://scgcon.starcitygames.com/event/scg-con-las-vegas/",
-      "status": "Upcoming"
+      "link": "https://scgcon.starcitygames.com/event/scg-con-las-vegas/"
     },
     {
       "name": "Collect-A-Con New Jersey",
@@ -118,8 +109,7 @@
       "city": "Edison, NJ",
       "formats": "Buy/Sell/Trade",
       "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
-      "link": "https://collectaconusa.com/new-jersey-2/",
-      "status": "Upcoming"
+      "link": "https://collectaconusa.com/new-jersey-2/"
     },
     {
       "name": "PAX UNPLUGGED",
@@ -130,8 +120,7 @@
       "city": "Philadelphia, PA",
       "formats": "TBD",
       "tcgs": "Everything TCGS!",
-      "link": "https://unplugged.paxsite.com/en-us.html",
-      "status": "Upcoming"
+      "link": "https://unplugged.paxsite.com/en-us.html"
     },
     {
       "name": "Collect-A-Con San Antonio",
@@ -142,8 +131,7 @@
       "city": "San Antonio, TX",
       "formats": "Buy/Sell/Trade",
       "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
-      "link": "https://collectaconusa.com/san-antonio/",
-      "status": "Upcoming"
+      "link": "https://collectaconusa.com/san-antonio/"
     },
     {
       "name": "Collect-A-Con Los Angeles",
@@ -154,8 +142,7 @@
       "city": "Los Angeles, CA",
       "formats": "Buy/Sell/Trade",
       "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
-      "link": "https://collectaconusa.com/losangeles2/",
-      "status": "Upcoming"
+      "link": "https://collectaconusa.com/losangeles2/"
     }
   ]
 }
