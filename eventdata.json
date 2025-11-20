@@ -154,6 +154,39 @@
       "formats": "Buy/Sell/Trade",
       "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
       "link": "https://collectaconusa.com/losangeles2/"
+    },
+    {
+      "name": "MagicCon Las Vegas 2026",
+      "organizer": "Wizards of the Coast",
+      "region": "US West",
+      "date": "May 1-3, 2026",
+      "location": "Las Vegas Convention Center",
+      "city": "Las Vegas, NV",
+      "formats": "Pro Tour, Side Events, Artist Alley, Cosplay, Buy, Sell, Trade",
+      "tcgs": "Magic the Gathering",
+      "link": "https://mcvegas.mtgfestivals.com/en-us.html"
+    },
+    {
+      "name": "MagicCon Amsterdam 2026",
+      "organizer": "Wizards of the Coast",
+      "region": "Europe",
+      "date": "July 17-19, 2026",
+      "location": "TBD",
+      "city": "Amsterdam",
+      "formats": "Pro Tour, Side Events, Artist Alley, Cosplay, Buy, Sell, Trade",
+      "tcgs": "Magic the Gathering",
+      "link": "https://www.mtgfestivals.com/global/en-us.html"
+    },
+    {
+      "name": "MagicCon Atlanta 2026",
+      "organizer": "Wizards of the Coast",
+      "region": "US East",
+      "date": "November 13-15, 2026",
+      "location": "TBD",
+      "city": "Atlanta, GA",
+      "formats": "Pro Tour, Side Events, Artist Alley, Cosplay, Buy, Sell, Trade",
+      "tcgs": "Magic the Gathering",
+      "link": "https://www.mtgfestivals.com/global/en-us.html"
     }
   ]
 }
