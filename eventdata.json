@@ -1,160 +1,6 @@
 {
-  "lastUpdated": "August 24, 2025",
+  "lastUpdated": "Feb 12, 2026",
   "events": [
-    {
-      "name": "SCG CON Orlando",
-      "organizer": "Star City Games",
-      "region": "US East",
-      "date": "August 29-31, 2025",
-      "location": "Tru by Hilton Orlando Convention Center",
-      "city": "Orlando, Florida",
-      "formats": "Commander, Standard, Sealed, Modern, cEDH",
-      "tcgs": "Magic the Gathering, Flesh and Blood, Lorcana, Star Wars Unlimited, Vibes, Wonders of the First, Bo Jackson Battle Arena",
-      "link": "https://scgcon.starcitygames.com/event/scg-con-orlando/"
-    },
-    {
-      "name": "Collect-A-Con Atlanta",
-      "organizer": "Collect-A-Con LLC",
-      "region": "US East",
-      "date": "September 13-14, 2025",
-      "location": "Georgia World Congress Center",
-      "city": "Atlanta, GA",
-      "formats": "Buy/Sell/Trade",
-      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
-      "link": "https://collectaconusa.com/atlanta-2/"
-    },
-    {
-      "name": "MagicCon Atlanta 2025",
-      "organizer": "Wizards of the Coast",
-      "region": "US East",
-      "date": "September 26-28, 2025",
-      "location": "Georgia World Congress Center",
-      "city": "Atlanta, GA",
-      "formats": "Pro Tour, Side Events, Artist Alley, Cosplay",
-      "tcgs": "Magic the Gathering",
-      "link": "https://mcatlanta.mtgfestivals.com/en-us.html"
-    },
-    {
-      "name": "Eternal Weekend",
-      "organizer": "Card Titan Events",
-      "region": "US East",
-      "date": "October 9-12, 2025",
-      "location": "David T. Lawrence Convention Center",
-      "city": "Pittsburgh, PA",
-      "formats": "Vintage, Legacy, Premodern, Old School, & more",
-      "tcgs": "Magic the Gathering",
-      "link": "https://www.cardtitanevents.com/"
-    },
-    {
-      "name": "Collect-A-Con Chicago",
-      "organizer": "Collect-A-Con LLC",
-      "region": "US Central",
-      "date": "October 11-12, 2025",
-      "location": "Donald E Stephens Convention Center",
-      "city": "Rosemont, IL",
-      "formats": "Buy/Sell/Trade",
-      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
-      "link": "https://collectaconusa.com/chicago-2/"
-    },
-    {
-      "name": "SCG CON Houston",
-      "organizer": "Star City Games",
-      "region": "US Central",
-      "date": "October 17-19, 2025",
-      "location": "NRG Center",
-      "city": "Houston, TX",
-      "formats": "Commander, Standard, Sealed, Modern, cEDH, & More",
-      "tcgs": "Magic the Gathering, Flesh and Blood, Lorcana, Star Wars Unlimited, Wonders of the First, Sorcery, Vibes, Bo Jackson Battle Arena",
-      "link": "https://scgcon.starcitygames.com/event/scg-con-houston/"
-    },
-    {
-      "name": "SCG CON Baltimore",
-      "organizer": "Star City Games",
-      "region": "US East",
-      "date": "October 24-26, 2025",
-      "location": "Baltimore Convention Center",
-      "city": "Baltimore, MD",
-      "formats": "Standard, TBD",
-      "tcgs": "Magic the Gathering, Flesh and Blood, Lorcana, Star Wars Unlimited, Wonders of the First, Sorcery, Vibes, Bo Jackson Battle Arena",
-      "link": "https://scgcon.starcitygames.com/event/scg-con-baltimore/"
-    },
-    {
-      "name": "Collect-A-Con Houston",
-      "organizer": "Collect-A-Con LLC",
-      "region": "US Central",
-      "date": "October 25-26, 2025",
-      "location": "George R Brown Convention Center",
-      "city": "Houston, TX",
-      "formats": "Buy/Sell/Trade",
-      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
-      "link": "https://collectaconusa.com/houston2/"
-    },
-    {
-      "name": "Collect-A-Con Dallas/Fort-Worth",
-      "organizer": "Collect-A-Con LLC",
-      "region": "US Central",
-      "date": "November 8-9, 2025",
-      "location": "Fort Worth Convention Center",
-      "city": "Fort Worth, TX",
-      "formats": "Buy/Sell/Trade",
-      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
-      "link": "https://collectaconusa.com/dfw2/"
-    },
-    {
-      "name": "SCG CON Las Vegas",
-      "organizer": "Star City Games",
-      "region": "US West",
-      "date": "November 21-23, 2025",
-      "location": "Westgate Las Vegas Resort & Casino",
-      "city": "Las Vegas, NV",
-      "formats": "Standard, TBD",
-      "tcgs": "Magic the Gathering, Flesh and Blood, Lorcana, Star Wars Unlimited, Wonders of the First, Sorcery, Vibes, Bo Jackson Battle Arena",
-      "link": "https://scgcon.starcitygames.com/event/scg-con-las-vegas/"
-    },
-    {
-      "name": "Collect-A-Con New Jersey",
-      "organizer": "Collect-A-Con LLC",
-      "region": "US East",
-      "date": "November 22-23, 2025",
-      "location": "New Jersey Expo Center",
-      "city": "Edison, NJ",
-      "formats": "Buy/Sell/Trade",
-      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
-      "link": "https://collectaconusa.com/new-jersey-2/"
-    },
-    {
-      "name": "PAX UNPLUGGED",
-      "organizer": "PAX",
-      "region": "US East",
-      "date": "November 21-23, 2025",
-      "location": "Pennsylvania Convention Center",
-      "city": "Philadelphia, PA",
-      "formats": "TBD",
-      "tcgs": "Everything TCGS!",
-      "link": "https://unplugged.paxsite.com/en-us.html"
-    },
-    {
-      "name": "Collect-A-Con San Antonio",
-      "organizer": "Collect-A-Con LLC",
-      "region": "US Central",
-      "date": "December 6-7, 2025",
-      "location": "Freeman Coliseum and Expo Center",
-      "city": "San Antonio, TX",
-      "formats": "Buy/Sell/Trade",
-      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
-      "link": "https://collectaconusa.com/san-antonio/"
-    },
-    {
-      "name": "Collect-A-Con Los Angeles",
-      "organizer": "Collect-A-Con LLC",
-      "region": "US West",
-      "date": "December 20-21, 2025",
-      "location": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "formats": "Buy/Sell/Trade",
-      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
-      "link": "https://collectaconusa.com/losangeles2/"
-    },
     {
       "name": "Collect-A-Con Broward County",
       "organizer": "Collect-A-Con LLC",
@@ -165,6 +11,17 @@
       "formats": "Buy/Sell/Trade",
       "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
       "link": "https://collectaconusa.com/miami/"
+    },
+    {
+      "name": "SCG Con Richmond",
+      "organizer": "Star City Games",
+      "region": "US East",
+      "date": "March 6-8, 2026",
+      "location": "Greater Richmond Convention Center",
+      "city": "Richmond, VA",
+      "formats": "Magic the Gathering, Flesh and Blood, Side Events, Vendors",
+      "tcgs": "Magic the Gathering, Flesh and Blood",
+      "link": "https://scgcon.starcitygames.com/event/scg-con-richmond-2026/"
     },
     {
       "name": "Collect-A-Con Houston",
@@ -211,6 +68,17 @@
       "link": "https://collectaconusa.com/cleveland/"
     },
     {
+      "name": "SCG Con Cincinnati",
+      "organizer": "Star City Games",
+      "region": "US Central",
+      "date": "May 15-17, 2026",
+      "location": "Duke Energy Convention Center",
+      "city": "Cincinnati, OH",
+      "formats": "Magic the Gathering, Flesh and Blood, Side Events, Vendors",
+      "tcgs": "Magic the Gathering, Flesh and Blood",
+      "link": "https://scgcon.starcitygames.com/event/scg-con-cincinnati-2026/"
+    },
+    {
       "name": "Collect-A-Con Phoenix",
       "organizer": "Collect-A-Con LLC",
       "region": "US West",
@@ -220,6 +88,17 @@
       "formats": "Buy/Sell/Trade",
       "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
       "link": "https://collectaconusa.com/phoenix/"
+    },
+    {
+      "name": "SCG Con Washington D.C.",
+      "organizer": "Star City Games",
+      "region": "US East",
+      "date": "May 29-31, 2026",
+      "location": "Walter E Washington Convention Center",
+      "city": "Washington, D.C.",
+      "formats": "Magic the Gathering, Flesh and Blood, Side Events, Vendors",
+      "tcgs": "Magic the Gathering, Flesh and Blood",
+      "link": "https://scgcon.starcitygames.com/event/scg-con-washington-dc-2026/"
     },
     {
       "name": "Collect-A-Con Orlando",
