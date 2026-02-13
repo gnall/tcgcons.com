@@ -156,6 +156,39 @@
       "link": "https://collectaconusa.com/losangeles2/"
     },
     {
+      "name": "Collect-A-Con Broward County",
+      "organizer": "Collect-A-Con LLC",
+      "region": "US East",
+      "date": "February 21-22, 2026",
+      "location": "Broward County Convention Center",
+      "city": "Fort Lauderdale/Miami, FL",
+      "formats": "Buy/Sell/Trade",
+      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
+      "link": "https://collectaconusa.com/miami/"
+    },
+    {
+      "name": "Collect-A-Con Houston",
+      "organizer": "Collect-A-Con LLC",
+      "region": "US Central",
+      "date": "March 14-15, 2026",
+      "location": "George R Brown Convention Center",
+      "city": "Houston, TX",
+      "formats": "Buy/Sell/Trade",
+      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
+      "link": "https://collectaconusa.com/houston/"
+    },
+    {
+      "name": "Collect-A-Con Dallas/Fort-Worth",
+      "organizer": "Collect-A-Con LLC",
+      "region": "US Central",
+      "date": "April 4-5, 2026",
+      "location": "Fort Worth Convention Center",
+      "city": "Fort Worth, TX",
+      "formats": "Buy/Sell/Trade",
+      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
+      "link": "https://collectaconusa.com/dfw2/"
+    },
+    {
       "name": "MagicCon Las Vegas 2026",
       "organizer": "Wizards of the Coast",
       "region": "US West",
@@ -167,6 +200,72 @@
       "link": "https://mcvegas.mtgfestivals.com/en-us.html"
     },
     {
+      "name": "Collect-A-Con Cleveland",
+      "organizer": "Collect-A-Con LLC",
+      "region": "US East",
+      "date": "May 9-10, 2026",
+      "location": "Huntington Convention Center of Cleveland",
+      "city": "Cleveland, OH",
+      "formats": "Buy/Sell/Trade",
+      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
+      "link": "https://collectaconusa.com/cleveland/"
+    },
+    {
+      "name": "Collect-A-Con Phoenix",
+      "organizer": "Collect-A-Con LLC",
+      "region": "US West",
+      "date": "May 16-17, 2026",
+      "location": "WestWorld of Scottsdale",
+      "city": "Scottsdale, AZ",
+      "formats": "Buy/Sell/Trade",
+      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
+      "link": "https://collectaconusa.com/phoenix/"
+    },
+    {
+      "name": "Collect-A-Con Orlando",
+      "organizer": "Collect-A-Con LLC",
+      "region": "US East",
+      "date": "May 23-24, 2026",
+      "location": "Orange County Convention Center",
+      "city": "Orlando, FL",
+      "formats": "Buy/Sell/Trade",
+      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
+      "link": "https://collectaconusa.com/orlando/"
+    },
+    {
+      "name": "Collect-A-Con Kansas City",
+      "organizer": "Collect-A-Con LLC",
+      "region": "US Central",
+      "date": "June 13-14, 2026",
+      "location": "Kansas City Convention Center",
+      "city": "Kansas City, MO",
+      "formats": "Buy/Sell/Trade",
+      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
+      "link": "https://collectaconusa.com/kansas-city/"
+    },
+    {
+      "name": "Collect-A-Con Las Vegas",
+      "organizer": "Collect-A-Con LLC",
+      "region": "US West",
+      "date": "June 20-21, 2026",
+      "location": "Las Vegas Convention Center",
+      "city": "Las Vegas, NV",
+      "formats": "Buy/Sell/Trade",
+      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
+      "link": "https://collectaconusa.com/las-vegas/"
+    },
+    {
+      "name": "Collect-A-Con New Jersey",
+      "organizer": "Collect-A-Con LLC",
+      "region": "US East",
+      "date": "July 11-12, 2026",
+      "location": "New Jersey Expo Center",
+      "city": "Edison, NJ",
+      "formats": "Buy/Sell/Trade",
+      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
+      "link": "https://collectaconusa.com/newjersey/"
+    },
+    {
       "name": "MagicCon Amsterdam 2026",
       "organizer": "Wizards of the Coast",
       "region": "Europe",
@@ -176,6 +275,127 @@
       "formats": "Pro Tour, Side Events, Artist Alley, Cosplay, Buy, Sell, Trade",
       "tcgs": "Magic the Gathering",
       "link": "https://www.mtgfestivals.com/global/en-us.html"
+    },
+    {
+      "name": "Collect-A-Con Minneapolis",
+      "organizer": "Collect-A-Con LLC",
+      "region": "US Central",
+      "date": "July 18-19, 2026",
+      "location": "Minneapolis Convention Center",
+      "city": "Minneapolis, MN",
+      "formats": "Buy/Sell/Trade",
+      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
+      "link": "https://collectaconusa.com/minneapolis/"
+    },
+    {
+      "name": "Collect-A-Con Los Angeles",
+      "organizer": "Collect-A-Con LLC",
+      "region": "US West",
+      "date": "August 1-2, 2026",
+      "location": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "formats": "Buy/Sell/Trade",
+      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
+      "link": "https://collectaconusa.com/losangeles/"
+    },
+    {
+      "name": "Collect-A-Con San Antonio",
+      "organizer": "Collect-A-Con LLC",
+      "region": "US Central",
+      "date": "August 15-16, 2026",
+      "location": "Freeman Coliseum and Expo Center",
+      "city": "San Antonio, TX",
+      "formats": "Buy/Sell/Trade",
+      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
+      "link": "https://collectaconusa.com/san-antonio/"
+    },
+    {
+      "name": "Collect-A-Con Charlotte",
+      "organizer": "Collect-A-Con LLC",
+      "region": "US East",
+      "date": "August 22-23, 2026",
+      "location": "Charlotte Convention Center",
+      "city": "Charlotte, NC",
+      "formats": "Buy/Sell/Trade",
+      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
+      "link": "https://collectaconusa.com/charlotte/"
+    },
+    {
+      "name": "Collect-A-Con Richmond",
+      "organizer": "Collect-A-Con LLC",
+      "region": "US East",
+      "date": "August 29-30, 2026",
+      "location": "Greater Richmond Convention Center",
+      "city": "Richmond, VA",
+      "formats": "Buy/Sell/Trade",
+      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
+      "link": "https://collectaconusa.com/richmond/"
+    },
+    {
+      "name": "Collect-A-Con San Francisco",
+      "organizer": "Collect-A-Con LLC",
+      "region": "US West",
+      "date": "September 12-13, 2026",
+      "location": "San Mateo County Convention Center",
+      "city": "San Mateo, CA",
+      "formats": "Buy/Sell/Trade",
+      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
+      "link": "https://collectaconusa.com/san-francisco/"
+    },
+    {
+      "name": "Collect-A-Con Atlanta",
+      "organizer": "Collect-A-Con LLC",
+      "region": "US East",
+      "date": "September 26-27, 2026",
+      "location": "Georgia World Congress Center",
+      "city": "Atlanta, GA",
+      "formats": "Buy/Sell/Trade",
+      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
+      "link": "https://collectaconusa.com/atlanta-2/"
+    },
+    {
+      "name": "Collect-A-Con Chicago",
+      "organizer": "Collect-A-Con LLC",
+      "region": "US Central",
+      "date": "October 10-11, 2026",
+      "location": "Donald E Stephens Convention Center",
+      "city": "Rosemont, IL",
+      "formats": "Buy/Sell/Trade",
+      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
+      "link": "https://collectaconusa.com/chicago-2/"
+    },
+    {
+      "name": "Collect-A-Con Dallas",
+      "organizer": "Collect-A-Con LLC",
+      "region": "US Central",
+      "date": "October 24-25, 2026",
+      "location": "Kay Bailey Hutchison Convention Center",
+      "city": "Dallas, TX",
+      "formats": "Buy/Sell/Trade",
+      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
+      "link": "https://collectaconusa.com/dallas/"
+    },
+    {
+      "name": "Collect-A-Con Houston",
+      "organizer": "Collect-A-Con LLC",
+      "region": "US Central",
+      "date": "November 7-8, 2026",
+      "location": "George R Brown Convention Center",
+      "city": "Houston, TX",
+      "formats": "Buy/Sell/Trade",
+      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
+      "link": "https://collectaconusa.com/houston2/"
+    },
+    {
+      "name": "Collect-A-Con New Jersey",
+      "organizer": "Collect-A-Con LLC",
+      "region": "US East",
+      "date": "November 21-22, 2026",
+      "location": "New Jersey Expo Center",
+      "city": "Edison, NJ",
+      "formats": "Buy/Sell/Trade",
+      "tcgs": "Pokemon, Magic the Gathering, Funko Pop, Anime Merch, Sports Cards, Comic Books, Video Games",
+      "link": "https://collectaconusa.com/new-jersey-2/"
     },
     {
       "name": "MagicCon Atlanta 2026",
